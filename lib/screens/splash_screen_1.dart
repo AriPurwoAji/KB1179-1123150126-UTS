@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'splash_screen_2.dart';
+import 'splash_screen_3.dart';
 
 class SplashScreen1 extends StatelessWidget {
   const SplashScreen1({super.key});
@@ -68,11 +69,31 @@ class SplashScreen1 extends StatelessWidget {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
+                      GestureDetector(
+                        onTap: () {
+                          Navigator.pushReplacement(
+                            context,
+                            MaterialPageRoute(
+                              builder: (_) => const SplashScreen1(),
+                            ),
+                          );
+                        },
+                        child: _indicator(false),
+                      ),
+                      const SizedBox(width: 10),
+                      GestureDetector(
+                        onTap: () {
+                          Navigator.pushReplacement(
+                            context,
+                            MaterialPageRoute(
+                              builder: (_) => const SplashScreen2(),
+                            ),
+                          );
+                        },
+                        child: _indicator(false),
+                      ),
+                      const SizedBox(width: 10),
                       _indicator(true),
-                      const SizedBox(width: 10),
-                      _indicator(false),
-                      const SizedBox(width: 10),
-                      _indicator(false),
                     ],
                   ),
 
