@@ -88,14 +88,6 @@ flutter:
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/to/font-from-package
   assets:
-    - assets/images/gongju1.jpg
-    - assets/images/google-logo.png
-    - assets/images/login.jpg
-    - assets/images/wangja.png
-    - assets/images/wangja.png
-    - assets/images/lockscreen.jpg
-    - assets/images/welcome.svg
-    - assets/images/welcome.png
     - assets/images/welcome-back.png
     - assets/images/key.png
     - assets/images/try.png
