@@ -67,34 +67,46 @@ class SplashScreen2 extends StatelessWidget {
                 ),
 
                 const SizedBox(height: 30),
-Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      GestureDetector(
-                        onTap: () {
-                          Navigator.pushReplacement(
-                            context,
-                            MaterialPageRoute(
-                                builder: (_) => const SplashScreen1()),
-                          );
-                        },
-                        child: _indicator(false),
-                      ),
-                      const SizedBox(width: 10),
-                      GestureDetector(
-                        onTap: () {
-                          Navigator.pushReplacement(
-                            context,
-                            MaterialPageRoute(
-                                builder: (_) => const SplashScreen2()),
-                          );
-                        },
-                        child: _indicator(false),
-                      ),
-                      const SizedBox(width: 10),
-                      _indicator(true),
-                    ],
-                  ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.pushReplacement(
+                          context,
+                          MaterialPageRoute(
+                            builder: (_) => const SplashScreen1(),
+                          ),
+                        );
+                      },
+                      child: _indicator(false),
+                    ),
+                    const SizedBox(width: 10),
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.pushReplacement(
+                          context,
+                          MaterialPageRoute(
+                            builder: (_) => const SplashScreen2(),
+                          ),
+                        );
+                      },
+                      child: _indicator(true),
+                    ),
+                    const SizedBox(width: 10),
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.pushReplacement(
+                          context,
+                          MaterialPageRoute(
+                            builder: (_) => const SplashScreen3(),
+                          ),
+                        );
+                      },
+                      child: _indicator(false),
+                    ),
+                  ],
+                ),
 
                 const SizedBox(height: 60),
 

@@ -78,7 +78,7 @@ class SplashScreen1 extends StatelessWidget {
                             ),
                           );
                         },
-                        child: _indicator(false),
+                        child: _indicator(true),
                       ),
                       const SizedBox(width: 10),
                       GestureDetector(
@@ -93,7 +93,17 @@ class SplashScreen1 extends StatelessWidget {
                         child: _indicator(false),
                       ),
                       const SizedBox(width: 10),
-                      _indicator(true),
+                      GestureDetector(
+                        onTap: () {
+                          Navigator.pushReplacement(
+                            context,
+                            MaterialPageRoute(
+                              builder: (_) => const SplashScreen3(),
+                            ),
+                          );
+                        },
+                        child: _indicator(false),
+                      ),
                     ],
                   ),
 
