@@ -92,4 +92,7 @@ flutter:
     - assets/images/key.png
     - assets/images/try.png
     - assets/images/sign-in.png
-    - assets/images/log-in.png
+    - assets/images/splash_screen_1.png
+    - assets/images/splash_screen_2.png
+    - assets/images/splash_screen_3.png
+    - assets/images/sign_in.png
