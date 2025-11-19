@@ -96,7 +96,7 @@ class SplashScreen3 extends StatelessWidget {
                     ],
                   ),
 
-                  const SizedBox(height: 50),
+                  const SizedBox(height: 40),
 
                   SizedBox(
                     width: double.infinity,

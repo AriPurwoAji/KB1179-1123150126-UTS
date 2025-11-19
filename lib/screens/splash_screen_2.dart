@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'splash_screen_1.dart';
 import 'splash_screen_3.dart';
 
 class SplashScreen2 extends StatelessWidget {
@@ -69,45 +68,36 @@ class SplashScreen2 extends StatelessWidget {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      GestureDetector(
-                        onTap: () {
-                          Navigator.pushReplacement(
-                            context,
-                            MaterialPageRoute(
-                              builder: (_) => const SplashScreen1(),
-                            ),
-                          );
-                        },
-                        child: _indicator(false),
+                      Container(
+                        height: 10,
+                        width: 10,
+                        decoration: BoxDecoration(
+                          shape: BoxShape.circle,
+                          color: Colors.grey,
+                        ),
                       ),
-                      const SizedBox(width: 10),
-                      GestureDetector(
-                        onTap: () {
-                          Navigator.pushReplacement(
-                            context,
-                            MaterialPageRoute(
-                              builder: (_) => const SplashScreen2(),
-                            ),
-                          );
-                        },
-                        child: _indicator(true),
+                      const SizedBox(width: 8),
+                      Container(
+                        height: 14,
+                        width: 14,
+                        decoration: BoxDecoration(
+                          shape: BoxShape.circle,
+                          color: Colors.cyan,
+                        ),
                       ),
-                      const SizedBox(width: 10),
-                      GestureDetector(
-                        onTap: () {
-                          Navigator.pushReplacement(
-                            context,
-                            MaterialPageRoute(
-                              builder: (_) => const SplashScreen3(),
-                            ),
-                          );
-                        },
-                        child: _indicator(false),
+                      const SizedBox(width: 8),
+                      Container(
+                        height: 10,
+                        width: 10,
+                        decoration: BoxDecoration(
+                          shape: BoxShape.circle,
+                          color: Colors.grey,
+                        ),
                       ),
                     ],
                   ),
 
-                  const SizedBox(height: 50),
+                  const SizedBox(height: 40),
 
                   SizedBox(
                     width: double.infinity,
@@ -144,18 +134,6 @@ class SplashScreen2 extends StatelessWidget {
             ),
           ),
         ),
-      ),
-    );
-  }
-
-  Widget _indicator(bool active) {
-    return AnimatedContainer(
-      duration: const Duration(milliseconds: 300),
-      width: active ? 14 : 10,
-      height: active ? 14 : 10,
-      decoration: BoxDecoration(
-        shape: BoxShape.circle,
-        color: active ? Colors.cyan : const Color(0xFFedede9),
       ),
     );
   }

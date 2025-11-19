@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'splash_screen_2.dart';
-import 'splash_screen_3.dart';
 
 class SplashScreen1 extends StatelessWidget {
   const SplashScreen1({super.key});
@@ -70,8 +69,8 @@ class SplashScreen1 extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Container(
-                        height: 12,
-                        width: 12,
+                        height: 14,
+                        width: 14,
                         decoration: BoxDecoration(
                           shape: BoxShape.circle,
                           color: Colors.cyan,
@@ -83,7 +82,7 @@ class SplashScreen1 extends StatelessWidget {
                         width: 10,
                         decoration: BoxDecoration(
                           shape: BoxShape.circle,
-                          color: const Color.fromARGB(255, 21, 153, 170),
+                          color: Colors.grey,
                         ),
                       ),
                       const SizedBox(width: 8),
@@ -92,7 +91,7 @@ class SplashScreen1 extends StatelessWidget {
                         width: 10,
                         decoration: BoxDecoration(
                           shape: BoxShape.circle,
-                          color: const Color.fromARGB(255, 21, 153, 170),
+                          color: Colors.grey,
                         ),
                       ),
                     ],
