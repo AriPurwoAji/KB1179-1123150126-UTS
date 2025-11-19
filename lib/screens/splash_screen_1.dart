@@ -69,45 +69,36 @@ class SplashScreen1 extends StatelessWidget {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      GestureDetector(
-                        onTap: () {
-                          Navigator.pushReplacement(
-                            context,
-                            MaterialPageRoute(
-                              builder: (_) => const SplashScreen1(),
-                            ),
-                          );
-                        },
-                        child: _indicator(true),
+                      Container(
+                        height: 12,
+                        width: 12,
+                        decoration: BoxDecoration(
+                          shape: BoxShape.circle,
+                          color: Colors.cyan,
+                        ),
                       ),
-                      const SizedBox(width: 10),
-                      GestureDetector(
-                        onTap: () {
-                          Navigator.pushReplacement(
-                            context,
-                            MaterialPageRoute(
-                              builder: (_) => const SplashScreen2(),
-                            ),
-                          );
-                        },
-                        child: _indicator(false),
+                      const SizedBox(width: 8),
+                      Container(
+                        height: 10,
+                        width: 10,
+                        decoration: BoxDecoration(
+                          shape: BoxShape.circle,
+                          color: const Color.fromARGB(255, 21, 153, 170),
+                        ),
                       ),
-                      const SizedBox(width: 10),
-                      GestureDetector(
-                        onTap: () {
-                          Navigator.pushReplacement(
-                            context,
-                            MaterialPageRoute(
-                              builder: (_) => const SplashScreen3(),
-                            ),
-                          );
-                        },
-                        child: _indicator(false),
+                      const SizedBox(width: 8),
+                      Container(
+                        height: 10,
+                        width: 10,
+                        decoration: BoxDecoration(
+                          shape: BoxShape.circle,
+                          color: const Color.fromARGB(255, 21, 153, 170),
+                        ),
                       ),
                     ],
                   ),
 
-                  const SizedBox(height: 50),
+                  const SizedBox(height: 40),
 
                   SizedBox(
                     width: double.infinity,
@@ -144,18 +135,6 @@ class SplashScreen1 extends StatelessWidget {
             ),
           ),
         ),
-      ),
-    );
-  }
-
-  Widget _indicator(bool active) {
-    return AnimatedContainer(
-      duration: const Duration(milliseconds: 300),
-      width: active ? 14 : 10,
-      height: active ? 14 : 10,
-      decoration: BoxDecoration(
-        shape: BoxShape.circle,
-        color: active ? Colors.cyan : const Color(0xFFedede9),
       ),
     );
   }
